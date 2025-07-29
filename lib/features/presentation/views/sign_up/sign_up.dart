@@ -19,6 +19,8 @@ class _SignUpState extends State<SignUp> {
   TextEditingController confirmPassword = TextEditingController();
   final _formKey = GlobalKey<FormState>();
 
+  bool? value = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -104,6 +106,38 @@ class _SignUpState extends State<SignUp> {
                           }
                         },
                       ),
+                      Row(
+                        children: [
+                          Checkbox(
+                            focusColor: colors(context).primaryColor,
+                            checkColor: Colors.white,
+                            value: value,
+                            onChanged: (bool? newChange) {
+                              setState(() {
+                                value = newChange;
+                              });
+                            },
+                            fillColor: MaterialStateProperty.all(value==true?colors(context).primaryColor: Colors.white),
+                          ),
+                          RichText(
+                            text: TextSpan(
+                              children: [
+                                TextSpan(text: "I understood the ", 
+                                  style: TextStyle(
+                                    color: colors(context).secondaryColor,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: "terms & policy",
+                                  style: TextStyle(
+                                    color: colors(context).primaryColor,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                       SignInUpButton(
                         buttonName: AppLocalizations.of(context,)!.translate("sign_up"),
                         onPressed: () {
@@ -124,6 +158,7 @@ class _SignUpState extends State<SignUp> {
                           }
                         },
                       ),
+
                     ],
                   ),
                 ),
