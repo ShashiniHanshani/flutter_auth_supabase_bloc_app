@@ -1,0 +1,12 @@
+{
+    "title" : "Sign In",
+    "sign_in_your_account": "ඔබගේ ගිණුමට පුරනය වන්න",
+    "email" : "ඊමේල්",
+    "password" : "මුරපදය",
+    "name" : "නම",
+    "confirm_password" : "මුරපදය තහවුරු කරන්න",
+    "sign_in" : "පුරනය වන්න",
+    "sign_up" : "ලියාපදිංචි වන්න",
+    "create_your_account" : "ඔබගේ ගිණුම සාදන්න",
+    "sign_up_success_msg": "පරිශීලක ගිණුම සාර්ථකව සාදන ලදී"
+}

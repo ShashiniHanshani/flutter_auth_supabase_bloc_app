@@ -1,0 +1,12 @@
+{
+    "title" : "Sign In",
+    "sign_in_your_account": "Sign in your account",
+    "email" : "Email",
+    "password" : "Password",
+    "name" : "Name",
+    "confirm_password" : "Confirm Password",
+    "sign_in" : "SIGN IN",
+    "sign_up" : "SIGN UP",
+    "create_your_account" : "Create Your Account",
+    "sign_up_success_msg": "User Account created successfully"
+}
