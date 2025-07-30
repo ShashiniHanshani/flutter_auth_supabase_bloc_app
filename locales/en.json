@@ -7,6 +7,14 @@
     "confirm_password" : "Confirm Password",
     "sign_in" : "SIGN IN",
     "sign_up" : "SIGN UP",
-    "create_your_account" : "Create Your Account",
-    "sign_up_success_msg": "User Account created successfully"
+    "create_your_account" : "Create your account",
+    "sign_up_success_msg": "User Account created successfully",
+    "terms_and_condition" : "Terms & Condition",
+    "select_your_language" : "Select Your Language",
+    "dont_have_account" : " Don’t have an account? ",
+    "have_account" : " Have an account?",
+    "or_sign_in_with" : "or sign in with",
+    "or_sign_up_with": "or sign up with",
+    "I_understood" : "I understood the",
+    "terms_policy" : "terms & policy"
 }

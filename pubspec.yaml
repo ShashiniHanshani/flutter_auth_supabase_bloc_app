@@ -37,6 +37,7 @@ dependencies:
   shared_preferences: ^2.5.2
   provider: ^6.1.2
   font_awesome_flutter: ^10.8.0
+  flutter_terms_viewer: ^1.0.2
   flutter_localizations:
     sdk: flutter
 
@@ -68,6 +69,7 @@ flutter:
   assets:
     - locales/en.json
     - locales/si.json
+    - assets/images/groundhog.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

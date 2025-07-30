@@ -27,6 +27,7 @@ class FormTextField extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 12.0),
           child: TextFormField(
+            autovalidateMode: AutovalidateMode.onUserInteraction,
             cursorColor: colors(context).primaryColor,
             controller: controller,
             decoration: InputDecoration(

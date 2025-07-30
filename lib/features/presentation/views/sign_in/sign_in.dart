@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sign_in_sign_up_bloc_supabase_hive_getit/core/themes/text_styles.dart';
 import 'package:sign_in_sign_up_bloc_supabase_hive_getit/core/themes/theme_data.dart';
+import 'package:sign_in_sign_up_bloc_supabase_hive_getit/features/presentation/views/language_view.dart';
 import 'package:sign_in_sign_up_bloc_supabase_hive_getit/features/presentation/views/sign_up/sign_up.dart';
 import 'package:sign_in_sign_up_bloc_supabase_hive_getit/features/presentation/widgets/form_text_field.dart';
+import 'package:sign_in_sign_up_bloc_supabase_hive_getit/features/presentation/widgets/sign_in_cages.dart';
 import 'package:sign_in_sign_up_bloc_supabase_hive_getit/features/presentation/widgets/sign_in_up_button.dart';
 import 'package:sign_in_sign_up_bloc_supabase_hive_getit/utils/app_localizations.dart';
 
@@ -82,14 +84,13 @@ class _SignInState extends State<SignIn> {
                             formKey.currentState!.save();
                             print("Email : ${email.text}");
                             print("Password : ${password.text}");
-                            
                           }
                         },
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(vertical: 20),
                         child: Text(
-                          "or sign in with",
+                          AppLocalizations.of(context)!.translate("or_sign_in_with"),
                           style: size16weight400.copyWith(color: colors(context).inputFieldHintColor),
                         ),
                       ),
@@ -130,10 +131,11 @@ class _SignInState extends State<SignIn> {
                       SizedBox(height: 20),
                       RichText(
                         text: TextSpan(
-                          text: "Don’t have an account? ",
+                          text: "${AppLocalizations.of(context)!.translate("dont_have_account")} ",
                           style: size16weight400.copyWith(
                             color: colors(context).secondaryColor,
                           ),
+                          
                           children: [
                             TextSpan(
                               text: AppLocalizations.of(context,)!.translate("sign_up"),
@@ -165,27 +167,4 @@ class _SignInState extends State<SignIn> {
   }
 }
 
-class SignInCages extends StatelessWidget {
-  final IconData icon;
-  final Color? color;
-  final VoidCallback onPressed;
-  const SignInCages({super.key, required this.icon, this.color, required this.onPressed});
 
-  @override
-  Widget build(BuildContext context) {
-    final height = MediaQuery.sizeOf(context).height;
-    return GestureDetector(
-      onTap: () {
-        onPressed;
-      },
-      child: Container(
-        height: height/15,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5),
-          color: colors(context).textFieldColor
-        ),
-        child: Icon(icon, color: color,),
-      ),
-    );
-  }
-}

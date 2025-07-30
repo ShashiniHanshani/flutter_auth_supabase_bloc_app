@@ -8,5 +8,13 @@
     "sign_in" : "පුරනය වන්න",
     "sign_up" : "ලියාපදිංචි වන්න",
     "create_your_account" : "ඔබගේ ගිණුම සාදන්න",
-    "sign_up_success_msg": "පරිශීලක ගිණුම සාර්ථකව සාදන ලදී"
+    "sign_up_success_msg": "පරිශීලක ගිණුම සාර්ථකව සාදන ලදී",
+    "terms_and_condition" : "Terms & Condition",
+    "select_your_language" : "භාෂාව තෝරන්න",
+    "dont_have_account" : "ගිණුමක් නොමැතිද?",
+    "have_account" : "ගිණුමක් තිබේද?",
+    "or_sign_in_with" : "හෝ සමඟ පුරනය වන්න",
+    "or_sign_up_with":"හෝ සමඟ ලියාපදිංචි වන්න",
+    "I_understood" : "මට තේරුණා",
+    "terms_policy" : "නියමයන් සහ ප්‍රතිපත්ති"
 }
